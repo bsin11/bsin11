@@ -3,23 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-  <meta property='og:type' content='website'>
-  <meta property='og:title' content='WebデザイナーTARO YAMADA ポートフォリオ'>
-  <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='Webデザイナー TARO YAMADAのポートフォリオサイトです！'>
-  <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="Webデザイナー TARO YAMADAのポートフォリオサイトです！" />
+  
   <title>Webエンジニア　Shintaro Yukawa ポートフォリオ</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
-  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="img/favicon.ico" />
-  <link rel=”canonical” href=”URLが入る” />
+  
   <link rel="stylesheet" type="text/css" href="portfolio.css"
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- jQuery.jsの読み込み -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<!-- スムーズスクロール部分の記述 -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
 </head>
 
 <body>
@@ -31,7 +42,7 @@
           <li><a class="active" href="#header">Home</a></li>
           <li><a href="#about">Profile</a></li>
           <li><a href="#skill">Skill</a></li>
-          <li><a href="works">Works</a></li>
+          <li><a href="#work">Works</a></li>
           <li class="right"><a href="#contact">Contact</a></li>
         </ul>
 
@@ -83,67 +94,67 @@
             <div class="card">
               
               <div class="skill-desc">
-                <h3 class="skill-desc-title">HTML5/CSS3</h3>
+                
                 <div class="rating">
                   <div class="skill-icon">
-                    <img src="htmlcss.png" alt="">
+                    <img  class="icon" src="htmlcss.png">
+                    
                   </div>
+                  <h3 class="skill-desc-title">HTML5/CSS3<br>業務未経験</h3>
                 </div>
-                <div class="section-text">
-                  経験年数：業務未経験</div>
+                
               </div>
             </div>
             <div class="card">
               
               <div class="skill-desc">
-                <h3 class="skill-desc-title">JavaScript</h3>
+                
                 <div class="rating">
                   <div class="skill-icon">
-                    <img src="javascript.png" alt=">
+                    <img src="javascript.png" class="icon">
                   </div>
+                  <h3 class="skill-desc-title">JavaScript<br>業務未経験</h3>
                 </div>
-                <div class="section-text">
-                  経験年数：業務未経験</div>
+                
               </div>
             </div>
             <div class="card">
               
               <div class="skill-desc">
-                <h3 class="skill-desc-title">JQuery</h3>
+                
                 <div class="rating">
                   <div class="skill-icon">
-                    <img src="jquery.png">
+                    <img class="icon" src="jquery.jpg">
                   </div>
+                  <h3 class="skill-desc-title">JQuery<br>業務未経験</h3>
                 </div>
-                <div class="section-text">
-                  経験年数：業務未経験</div>
+                
               </div>
             </div>
             <div class="card">
              
               <div class="skill-desc">
-                <h3 class="skill-desc-title">Ruby</h3>
+                
                 <div class="rating">
                   <div class="skill-icon">
-                    <img src="ruby.jpg" >
+                    <img class="icon" src="ruby.jpg" >
                   </div>
+                  <h3 class="skill-desc-title">Ruby<br>業務未経験</h3>
                 </div>
-                <div class="section-text">
-                  経験年数：業務未経験</div>
+                
               </div>
             </div>
             <div class="card">
               
               <div class="skill-desc">
-                <h3 class="skill-desc-title">Ruby on rails</h3>
+                
                 <div class="rating">
                   <div class="skill-icon">
-                    <img src="rails.png" >
+                    <img class="icon" src="rails.jpg" >
                   </div>
+                  <h3 class="skill-desc-title">Ruby on rails<br>業務未経験</h3>
                 </div>
-                <div class="section-text">
-                  経験年数：業務未経験
-                </div>
+              
               </div>
             </div>
            
@@ -151,13 +162,13 @@
       </section>
 
 
-      <section class="section" id="works">
+      <section class="section" id="work">
         <div class="inner">
           <div class="section-title-area">
             <h2 class="section-title">Works</h2>
             <div class="section-intro">
               <div class="section-text">
-                Web制作の記録です。
+                Coming soon...
               </div>
             </div>
           </div>
@@ -166,10 +177,14 @@
                
               
               <div class="card-caption">
-                <img src="background.jpg">
-                <div class="card-caption-title">Shintaro Yukawaポートフォリオ</div>
-                <div class="card-caption-info">HTML/CSS,JQuery</div>
-                <div class="card-caption-url"><a class="url-link" href="#header" target="_blank">Link</a>
+               
+                <div class="card-caption-title">
+                  
+                  
+                 
+                </div>
+                <div class="card-caption-info"></div>
+                <div class="card-caption-url"><a class="url-link" href="#header" target="_blank"></a>
                 </div>
               </div>
             </div>
@@ -178,15 +193,7 @@
            
            
            
-            <div class="card">
-              <a href="img/works/fashion.jpg" data-size="960x720" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/fashion.jpg" alt="" />
-              </a>
-              <div class="card-caption">
-                <div class="card-caption-title">Coming soon...</div>
-                <div class="card-caption-info"></div>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -206,19 +213,14 @@
             </div>
           </div>
           <div class="section-body contact-wrapper">
-            <div class="contact-list">
-              <ul>
-                <li><a href="https://twitter.com/" target="_blank"><img src="img/contact/icon_tw.png" alt=""></a>
-                </li>
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="img/contact/icon_fb.png" alt=""></a>
-                </li>
-              </ul>
+            
+             
               <div class="contact-other">
 
                 <a href="malito:bene.dignitas11@gmail.com"><span class="material-icons">
                   email
                   </span><br>bene.dignitas11@gmail.com</a></div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -234,80 +236,6 @@
         </div>
     </footer>
   </div>
-
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-           It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides.
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-        </button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-        </button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
-  <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
-  <script type='text/javascript' src="js/script.js"></script>
   <script src="portfolio.js"></script>
 </body>
 </html>
