@@ -13,7 +13,7 @@ body {
   letter-spacing: .8px;
   word-break: break-all;
   color: black;
-  
+  -webkit-overflow-scrolling: touch;
 }
 
 a {
