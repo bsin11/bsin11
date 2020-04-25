@@ -7,29 +7,11 @@
   <title>Webエンジニア　Shintaro Yukawa ポートフォリオ</title>
   
   <link rel="stylesheet" type="text/css" href="portfolio.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <!-- jQuery.jsの読み込み -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-
-<!-- スムーズスクロール部分の記述 -->
-<script>
-$(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 400; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
+  
+  
+  <script src="https://kit.fontawesome.com/15d7169b30.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
 </head>
 
 <body>
@@ -97,6 +79,7 @@ $(function(){
                 <div class="rating">
                   <div class="skill-icon">
                     <img  class="icon" src="htmlcss.png">
+                    
                     
                   </div>
                   <h3 class="skill-desc-title">HTML5/CSS3<br>業務未経験</h3>
@@ -216,9 +199,7 @@ $(function(){
              
               <div class="contact-other">
 
-                <a href="malito:bene.dignitas11@gmail.com"><span class="material-icons">
-                  email
-                  </span><br>bene.dignitas11@gmail.com</a></div>
+                <a href="mailto:bene.dignitas11@gmail.com"><i class="fas fa-envelope fa-3x"></i><br>bene.dignitas11@gmail.com</a></div>
             
           </div>
         </div>
