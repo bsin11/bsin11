@@ -14,6 +14,7 @@ body {
   word-break: break-all;
   color: black;
   -webkit-overflow-scrolling: touch;
+  
 }
 
 a {
@@ -140,12 +141,14 @@ li {
   background-image:url("https://www.haikei-free.com/dataimg/black0007.png");
   background-size:cover;
   margin:0;
+  
 }
 
 #header2 .logo {
   position: relative;
   margin-bottom: 30px;
   text-align: center;
+  display:none;
 }
 
 #header2 .logo-title {
@@ -169,8 +172,8 @@ ul.topnav {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	background-color: black;
-	
+  background-color: black;
+  
 }
 ul.topnav li {
 	float: left;
@@ -192,6 +195,9 @@ ul.topnav li.right {
 	float: right;
 }
 
+
+
+  
 /*--------------------------------
  グローバルナビ
 ---------------------------------*/
@@ -247,10 +253,14 @@ ul.topnav li.right {
  WORKS
 ---------------------------------*/
 
-#works .card {
+#work .card {
   flex-basis: 31%;
   margin-bottom: 60px;
   text-align: center;
+  
+}
+#work .section-text{
+  
 }
 
 #works .card-wrapper::after {
@@ -327,7 +337,7 @@ ul.topnav li.right {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  widows: 100%;;
+  width: 100%;
   background-color:white;
 }
 
