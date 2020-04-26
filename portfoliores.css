@@ -1,0 +1,36 @@
+@media(max-width:1000px) {
+html{
+  height:100%;
+}
+body{
+  position:relative;
+  bottom:495px;
+  
+}
+
+.topnav{
+position:relative;
+top:412px;
+
+
+
+}
+#about .section-text{
+  text-align:center;
+}
+#skill .icon{
+  zoom:3.3;
+
+}
+#header2{
+  background-size:;
+    
+  
+}
+#work{
+  height:300px;
+}
+#contact{
+  height:300px;
+}
+}
