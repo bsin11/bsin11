@@ -7,4 +7,7 @@ $(function() {
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
   });
+
+
+$('#header2 .logo').fadeIn(4000);
 });
