@@ -56,7 +56,7 @@ li {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #ccc;
+  background-color:#BBBBBB;
 }
 
 .hover-action-01 {
@@ -97,7 +97,10 @@ li {
 }
 
 .section:nth-of-type(even) {
-  background-color:#DDDDDD;
+  background-color:#BBBBBB;
+}
+.section:nth-of-type(odd){
+  background-color:#222222;
 }
 
 .section .inner {
@@ -331,76 +334,31 @@ ul.topnav li.right {
 /*--------------------------------
  SKILL
 ---------------------------------*/
-
-#skill .card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
+#skill{
+  text-align:center;
+  color:white;
+}
+#skill .skill-desc-title{
   background-color:white;
+  padding:3px 20px;
+  color:black;
 }
 
-#skill .card {
-  display: flex;
-  flex-basis: 50%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  width:50%;
-}
-
-#skill .skill-icon {
-  flex-basis: 60px;
-  width:150px;
-  height:150px;
-  margin: 0 auto;
-  border-radius: 50%;
-  
-}
-
-#skill .skill-desc {
-  flex-basis: calc(100% - 60px - 30px);
-  width:50%;
-}
-
-#skill .skill-desc-title {
-  margin-bottom: 3px;
-  margin:0 auto;
-  width:50%;
-  text-align:center
-}
-
-
-
-
-#skill .rate:before,
-#skill .rate:after {
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  height: 20px;
-  content: "★★★★★";
-}
-
-#skill .rate:before {
-  color: #ddd;
-}
-
-#skill .rate:after {
-  overflow: hidden;
-  white-space: nowrap;
-  color: #f181b4;
-}
 
 
 
 /*--------------------------------
  CONTACT
 ---------------------------------*/
-
+#contact{
+  color:white;
+}
+.fa-3x{
+  color:white;
+}
+#contact a{
+  color:white;
+}
 #contact .contact-list ul {
   display: flex;
   align-items: flex-end;
